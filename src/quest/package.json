@@ -1,0 +1,41 @@
+{
+  "name": "@openswap/opera-quest",
+  "description": "Basic Quest smart contracts of Opera Insider",
+  "license": "GPL-2.0-or-later",
+  "publishConfig": {
+    "access": "public"
+  },
+  "version": "1.0.1",
+  "keywords": [
+    "opera"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/The-Open-Protocol/open-swap/"
+  },
+  "files": [
+    "contracts/quest/common",
+    "contracts/interfaces",
+    "contracts/libraries",
+    "artifacts/contracts/interfaces/**/*.json",
+    "!artifacts/contracts/interfaces/**/*.dbg.json"
+  ],
+  "scripts": {
+    "precommit": "pretty-quick --staged --pattern **/*.sol && hardhat compile && node ../../scripts/updatePoolHash.js",
+    "solhint": "solhint ./contracts/**/*.sol",
+    "compile": "hardhat compile",
+    "test": "hardhat test --parallel",
+    "coverage": "hardhat coverage --solcoverjs ./.solcover.js",
+    "validateNatspec": "hardhat validateOutput"
+  },
+  "engines": {
+    "pnpm": ">=8.0.0",
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "4.9.3",
+    "@openzeppelin/merkle-tree": "^1.0.5",
+    "@openswap/opera-insider-core": "workspace:1.1.1",
+    "@openswap/opera-insider-periphery": "workspace:1.1.1"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Wrapped Bitcoin",
+  "description": "Wrapped Bitcoin (WBTC) is an ERC-20 token backed 1:1 by Bitcoin (BTC), allowing BTC to be used in the Ethereum ecosystem.",
+  "image": "https://blush-expected-spoonbill-395.mypinata.cloud/ipfs/QmakXxju1QsJ2k9PFYjXoWzEfFPm8yoW3ix4cTiTQEJjYB",
+  "symbol": "WBTC",
+  "decimals": 8,
+  "properties": {
+    "tokenType": "ERC-1155",
+    "totalSupply": "21000000",
+    "contractAddress": "0x6C6F8faAa8c9886a7024eDa917803492ae6c5747",
+    "tokenID": "0",
+    "attributes": {
+      "wrapped": "true",
+      "backedBy": "BTC reserves",
+      "useCase": "DeFi, cross-chain transactions"
+    }
+  }
+}

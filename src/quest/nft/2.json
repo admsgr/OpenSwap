@@ -1,0 +1,18 @@
+{
+  "name": "USDT Token",
+  "description": "Tether (USDT) is a stablecoin that mirrors the value of the U.S. Dollar, issued by Tether Limited.",
+  "image": "https://blush-expected-spoonbill-395.mypinata.cloud/ipfs/QmdUshyLUMRgwy6Wirj6r3dwQsUddmrG2tVVfPXN8XfCjd",
+  "symbol": "USDT",
+  "decimals": 6,
+  "properties": {
+    "tokenType": "ERC-1155",
+    "totalSupply": "1000000000",
+    "contractAddress": "0x2b4c4676110cD244F2594b20dbe8Fb6Eb5f6952e",
+    "tokenID": "2",
+    "attributes": {
+      "stability": "pegged",
+      "backedBy": "USD reserves",
+      "useCase": "Stablecoin, digital payments"
+    }
+  }
+}

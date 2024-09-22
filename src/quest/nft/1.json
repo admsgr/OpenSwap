@@ -1,0 +1,18 @@
+{
+  "name": "Wrapped Ethereum",
+  "description": "Wrapped Ethereum (WETH) is an ERC-20 token that represents Ethereum (ETH) and is fully backed by ETH at a 1:1 ratio.",
+  "image": "https://blush-expected-spoonbill-395.mypinata.cloud/ipfs/QmXaeURdHVszjDuGCwM7DauTjaASfm8qBZYzETM5ehq7MD",
+  "symbol": "WETH",
+  "decimals": 18,
+  "properties": {
+    "tokenType": "ERC-1155",
+    "totalSupply": "5000000",
+    "contractAddress": "0x2736aC0d8f2d42692002283745629B96D4C93446",
+    "tokenID": "1",
+    "attributes": {
+      "wrapped": "true",
+      "backedBy": "ETH reserves",
+      "useCase": "DeFi, trading, staking"
+    }
+  }
+}

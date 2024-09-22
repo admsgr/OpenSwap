@@ -1,0 +1,31 @@
+{
+  "name": "@openswap/opera-insider-base-plugin",
+  "description": "Default plugin for Opera Insider core",
+  "license": "GPL-2.0-or-later",
+  "publishConfig": {
+    "access": "public"
+  },
+  "version": "1.1.1",
+  "keywords": [
+    "opera"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/The-Open-Protocol/open-swap/"
+  },
+  "dependencies": {
+    "@openswap/opera-insider-core": "workspace:1.1.1",
+    "@openswap/opera-insider-periphery": "workspace:1.1.1"
+  },
+  "scripts": {
+    "precommit": "pretty-quick --staged --pattern **/*.sol && hardhat compile",
+    "compile": "npm --prefix ../core run compile && npm --prefix ../periphery run compile && hardhat compile",
+    "solhint": "solhint ./contracts/**/*.sol",
+    "test": "hardhat test --parallel",
+    "coverage": "hardhat coverage --solcoverjs ./.solcover.js"
+  },
+  "engines": {
+    "pnpm": ">=8.0.0",
+    "node": ">=16.0.0"
+  }
+}

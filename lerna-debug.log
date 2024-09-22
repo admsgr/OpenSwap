@@ -1,0 +1,27 @@
+0 silly argv {
+0 silly argv   _: [ 'run' ],
+0 silly argv   concurrency: 1,
+0 silly argv   stream: true,
+0 silly argv   since: 'HEAD',
+0 silly argv   lernaVersion: '6.6.2',
+0 silly argv   '$0': 'node_modules\\lerna\\dist\\cli.js',
+0 silly argv   script: 'precommit'
+0 silly argv }
+1 notice cli v6.6.2
+2 verbose rootPath C:\Users\Honey\Documents\fatalswap\OpenSwap
+3 notice filter changed since "HEAD"
+4 silly hasTags
+5 verbose hasTags false
+6 info Looking for changed packages since HEAD
+7 silly checking diff src/base
+8 error Error: Command failed with exit code 128: git diff --name-only HEAD -- src/base
+8 error fatal: bad revision 'HEAD'
+8 error     at makeError (C:\Users\Honey\Documents\fatalswap\OpenSwap\node_modules\.pnpm\execa@5.0.0\node_modules\execa\lib\error.js:59:11)
+8 error     at module.exports.sync (C:\Users\Honey\Documents\fatalswap\OpenSwap\node_modules\.pnpm\execa@5.0.0\node_modules\execa\index.js:186:17)
+8 error     at Object.execSync (C:\Users\Honey\Documents\fatalswap\OpenSwap\node_modules\.pnpm\@lerna+child-process@6.6.2\node_modules\@lerna\child-process\index.js:39:16)
+8 error     at diffSinceIn (C:\Users\Honey\Documents\fatalswap\OpenSwap\node_modules\.pnpm\lerna@6.6.2_encoding@0.1.13\node_modules\lerna\dist\cli.js:401:24)
+8 error     at hasDiffSinceThatIsntIgnored (C:\Users\Honey\Documents\fatalswap\OpenSwap\node_modules\.pnpm\lerna@6.6.2_encoding@0.1.13\node_modules\lerna\dist\cli.js:374:18)
+8 error     at isCandidate (C:\Users\Honey\Documents\fatalswap\OpenSwap\node_modules\.pnpm\lerna@6.6.2_encoding@0.1.13\node_modules\lerna\dist\cli.js:467:77)
+8 error     at C:\Users\Honey\Documents\fatalswap\OpenSwap\node_modules\.pnpm\lerna@6.6.2_encoding@0.1.13\node_modules\lerna\dist\cli.js:294:9
+8 error     at PackageGraph.forEach (<anonymous>)
+8 error     at collectPackages (C:\Users\Honey\Documents\fatalswap\OpenSwap\node_modules\.pnpm\lerna@6.6.2_encoding@0.1.13\node_modules\lerna\dist\cli.js:293:12)

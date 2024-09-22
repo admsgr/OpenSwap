@@ -1,0 +1,39 @@
+{
+  "name": "@openswap/opera-insider-base",
+  "description": "Base smart contracts of Opera Insider",
+  "license": "GPL-2.0-or-later",
+  "publishConfig": {
+    "access": "public"
+  },
+  "version": "1.1.1",
+  "keywords": [
+    "opera"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/The-Open-Protocol/open-swap/"
+  },
+  "files": [
+    "contracts/base/common",
+    "contracts/interfaces",
+    "contracts/libraries",
+    "artifacts/contracts/interfaces/**/*.json",
+    "!artifacts/contracts/interfaces/**/*.dbg.json"
+  ],
+  "scripts": {
+    "precommit": "pretty-quick --staged --pattern **/*.sol",
+    "solhint": "solhint ./contracts/**/*.sol",
+    "compile": "hardhat compile",
+    "test": "hardhat test --parallel",
+    "coverage": "hardhat coverage --solcoverjs ./.solcover.js",
+    "validateNatspec": "hardhat validateOutput"
+  },
+  "engines": {
+    "pnpm": ">=8.0.0",
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "4.9.3",
+    "@openzeppelin/merkle-tree": "1.0.7"
+  }
+}

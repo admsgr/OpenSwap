@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OperaFactory #createCustomPool gas [ @skip-on-coverage ] 1`] = `4833685`;
+
+exports[`OperaFactory #createCustomPool gas for second pool [ @skip-on-coverage ] 1`] = `4833685`;
+
+exports[`OperaFactory #createPool gas [ @skip-on-coverage ] 1`] = `4820932`;
+
+exports[`OperaFactory #createPool gas for second pool [ @skip-on-coverage ] 1`] = `4820932`;
+
+exports[`OperaFactory factory bytecode size  [ @skip-on-coverage ] 1`] = `10609`;
+
+exports[`OperaFactory pool bytecode size  [ @skip-on-coverage ] 1`] = `22844`;
